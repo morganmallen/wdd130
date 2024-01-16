@@ -6,8 +6,8 @@ Fonts are separated by a & */
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #FFFFFF   ;
-  --secondary-color: #003D52 ;
+  --primary-color: #FFFFFF;
+  --secondary-color: #003D52;
   --accent1-color: #00B8F5;
 
   /* change the values below to your chosen font(s) */
