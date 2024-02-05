@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
 #content {
   max-width: 1600px;
   margin: 0 auto;
@@ -7,6 +10,7 @@ nav a {
   text-align: center;
   color: white;
   text-decoration: none;
+  padding: 35px;
 }
 
 #hero-msg h1,
@@ -22,12 +26,19 @@ main section {
   text-align: center;
 }
 
+main section img {
+  box-sizing: border-box;
+}
+
 #background {
   height: 725px;
 }
 
 body {
   background-color: white;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -44,6 +55,10 @@ nav a:hover {
   background-color: white;
   color: #003d52;
   text-decoration: none;
+  font-size: 2em;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 
 .book:hover,
@@ -58,11 +73,15 @@ nav a:hover {
 
 .msg {
   background-color: #00b8f5;
+  line-height: 1.5em;
+  padding: 35px;
 }
 
 footer {
   background-color: #003d52;
   color: white;
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 
 footer a {
@@ -82,22 +101,53 @@ footer p a:hover {
     text-decoration: underline;
 }
 
+footer .social img {
+  padding-top: 15px;
+}
+
 .msg h2 {
  color: white;
+ font-family: 'kalam', 'IM Fell French Canon', sans-serif;
 }
 
 .msg p {
- color: white
+ color: white;
+ font-size: 2em;
+ padding-bottom: 15px;
 }
 
 #hero-img {
     width: 100%
 }
 
+.card-img {
+  border: 10px solid black;
+}
+
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 .logo {
     width: 80px;
 }
+
+.home-title {
+font-family: 'kalam', 'IM Fell French Canon', sans-serif;
+font-size: 2em;
+margin-top: 10px;
+}
+
+h2 {
+  margin: 0;
+}
+
+#logo_link {
+  padding-top: 5px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
+}
+
