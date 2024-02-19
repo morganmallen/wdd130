@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
 
 #content {
   max-width: 1600px;
@@ -16,6 +16,7 @@ nav a {
 #hero-msg h1,
 #hero-msg h4 {
   text-align: center;
+  color: white;
 }
 
 .button-box {
@@ -32,6 +33,9 @@ main section img {
 
 #background {
   height: 725px;
+  background-color: #003d52;
+  grid-column: 1/11;
+  grid-row: 4/9;
 }
 
 body {
@@ -46,7 +50,7 @@ header {
 }
 
 nav a:hover {
-  background-color:#003d52;
+  background-color: #003d52;
   color: #00b8f5;
 }
 
@@ -67,10 +71,6 @@ nav a:hover {
   color: white;
 }
 
-#background {
-  background-color: #003d52;
-}
-
 .msg {
   background-color: #00b8f5;
   line-height: 1.5em;
@@ -82,6 +82,9 @@ footer {
   color: white;
   padding: 25px 50px;
   margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 footer a {
@@ -94,11 +97,11 @@ footer a:hover {
 }
 
 footer p {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 footer p a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 footer .social img {
@@ -106,37 +109,44 @@ footer .social img {
 }
 
 .msg h2 {
- color: white;
- font-family: 'kalam', 'IM Fell French Canon', sans-serif;
+  color: white;
+  font-family: "kalam", "IM Fell French Canon", sans-serif;
 }
 
 .msg p {
- color: white;
- font-size: 2em;
- padding-bottom: 15px;
+  color: white;
+  font-size: 2em;
+  padding-bottom: 15px;
 }
 
 #hero-img {
-    width: 100%
+  width: 100%;
 }
 
 .card-img {
   border: 10px solid black;
+  transition: transform 0.5s;
+  box-shadow: 5px 5px 10px gray;
+}
+
+.card-img:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
 }
 
 .icon {
-    width: 80px;
-    padding-top: 10px;
+  width: 80px;
+  padding-top: 10px;
 }
 
 .logo {
-    width: 80px;
+  width: 80px;
 }
 
 .home-title {
-font-family: 'kalam', 'IM Fell French Canon', sans-serif;
-font-size: 2em;
-margin-top: 10px;
+  font-family: "kalam", "IM Fell French Canon", sans-serif;
+  font-size: 2em;
+  margin-top: 10px;
 }
 
 h2 {
@@ -145,9 +155,131 @@ h2 {
 
 #logo_link {
   padding-top: 5px;
+  justify-self: center;
+  align-self: center;
 }
 
-.rivers-card, .camping-card, .rapids-card {
+.rivers-card,
+.camping-card,
+.rapids-card {
   margin: 200px 0;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: -100px;
+}
+
+#hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+
+#hero-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 100px;
+}
+
+#hero-msg h4 {
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.card-img,
+.mountains {
+  width: 100%;
+}
+
+.rivers-card {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.camping-card {
+  grid-column: 5/7;
+  grid-row: 2/3;
+}
+
+.rapids-card {
+  grid-column: 8/10;
+  grid-row: 2/3;
+}
+
+.mountains {
+  width: 100%;
+  grid-column: 2/7;
+  grid-row: 5/8;
+  box-shadow: 5px 5px 10px gray;
+}
+
+.msg {
+  grid-column: 6/10;
+  grid-row: 6/7;
+  box-shadow: 5px 5px 10px gray;
+}
+
+@media screen and (max-width: 900px) {
+  #hero,
+  .home-grid {
+    display: block;
+    height: auto;
+  }
+  nav,
+  footer {
+    flex-direction: column;
+  }
+  nav a {
+    display: block;
+    padding: 15px;
+  }
+  #hero {
+    margin-top: 0;
+  }
+  #hero-msg {
+    margin-top: 0;
+  }
+  #hero-msg h4 {
+    display: none;
+  }
+  #hero-msg h1 {
+    color: #6f7364;
+  }
+  .home-title {
+    font-size: 25px;
+  }
+  .rivers-card,
+  .camping-card,
+  .rapids-card {
+    margin: 50px auto;
+    width: 60%;
+  }
+  #background {
+    display: none;
+  }
+  .mountains,
+  .msg {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  footer {
+    margin-top: 25px;
+  }
+}
