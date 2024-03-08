@@ -235,6 +235,37 @@ main {
   box-shadow: 5px 5px 10px gray;
 }
 
+.rivers-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.rivers-title {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.rivers-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.rafting-img {
+  display: flex;
+  justify-content: center;
+}
+
+/* .rivers-section {
+  display: flex;
+  flex-direction: column;
+} */
+
+
+
+
+
+
 @media screen and (max-width: 900px) {
   #hero,
   .home-grid {
