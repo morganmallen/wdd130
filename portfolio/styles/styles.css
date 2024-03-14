@@ -1,0 +1,93 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+    background-color: #89b3d1;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    display: block;
+    padding: 30px;
+  }
+  
+  .nav a:hover {
+    cursor: pointer;
+    background-color: #396E94;
+  }
+  
+  
+
+.logo {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+main h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #396e94;
+}
+
+main p {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  padding-left: 100px;
+  padding-bottom: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #396E94;
+}
+.main-img {
+  width: 600px;
+  max-height: 400px;
+  padding-left: 500px;
+  padding-bottom: 100px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+
+.project-button {
+    padding: 10px 20px; 
+    font-size: 25px;
+    background-color: #396E94; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .project-button:hover {
+    background-color: #89b3d1; 
+  }
+  
