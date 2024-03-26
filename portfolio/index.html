@@ -10,7 +10,7 @@
   <body>
     <div id="content">
       <header class="header">
-        <nav class="nav">
+        <nav class="navbar">
           <a id="logo_link" href="index.html">
             <img class="logo" src="./images/A.png" alt="logo img" />
           </a>
@@ -21,23 +21,23 @@
       </header>
       <main class="main">
         <h1>Home</h1>
-          <p>
-            Welcome to my web development portfolio! As a passionate and
-            experienced web developer, I'm excited to showcase my skills and
-            projects to you. Throughout my career, I've honed my expertise in a
-            variety of technologies, including HTML, CSS, JavaScript, React.js,
-            Redux.js, Node.js, Express.js, and SQLite. Whether you're a
-            potential client, employer, or fellow developer, I invite you to
-            explore my portfolio and discover the innovative solutions I've
-            crafted. From responsive front-end designs to robust back-end
-            architectures, each project exemplifies my commitment to excellence
-            and my dedication to delivering high-quality results.
-          </p>
-          <img
-            class="main-img"
-            src="./images/homepage-img-1.jpg"
-            alt="home page img"
-          />
+        <p>
+          Welcome to my web development portfolio! As a passionate and
+          experienced web developer, I'm excited to showcase my skills and
+          projects to you. Throughout my career, I've honed my expertise in a
+          variety of technologies, including HTML, CSS, JavaScript, React.js,
+          Redux.js, Node.js, Express.js, and SQLite. Whether you're a potential
+          client, employer, or fellow developer, I invite you to explore my
+          portfolio and discover the innovative solutions I've crafted. From
+          responsive front-end designs to robust back-end architectures, each
+          project exemplifies my commitment to excellence and my dedication to
+          delivering high-quality results.
+        </p>
+        <img
+          class="main-img"
+          src="./images/homepage-img-1.jpg"
+          alt="home page img"
+        />
       </main>
       <footer class="footer">
         <nav class="footer-nav">
@@ -51,5 +51,21 @@
         </nav>
       </footer>
     </div>
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.querySelector(".navbar").style.top = "0";
+        } else {
+          document.querySelector(".navbar").style.top = "-50px";
+        }
+      }
+    </script>
   </body>
 </html>

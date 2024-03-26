@@ -19,16 +19,20 @@
     align-items: center;
   }
   
-  .nav {
+  .navbar {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 25%);
     background-color: #89b3d1;
     justify-items: center;
     align-items: center;
+    position: fixed;
+    left: -10px;
+    width: 100%;
+    transition: top 0.3s;
   }
   
-  .nav a {
+  .navbar a {
     text-decoration: none;
     color: white;
     font-size: x-large;
@@ -62,6 +66,7 @@
   grid-template-columns: 20% 60% 20%;
   grid-template-rows: 20% 20% 60%; /* Adjusted grid rows to auto */
   padding-bottom: 30px;
+  margin-top: 50px;
 }
 
 main h1 {
