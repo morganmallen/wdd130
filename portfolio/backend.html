@@ -10,7 +10,7 @@
   <body>
     <div id="content">
       <header class="header">
-        <nav class="nav">
+        <nav class="navbar">
           <a id="logo_link" href="index.html">
             <img class="logo" src="./images/A.png" alt="logo img" />
           </a>
@@ -19,9 +19,9 @@
           <a href="backend.html">Backend Projects</a>
         </nav>
       </header>
-      <main>
+      <main class="frontend-main">
         <h1>Backend Projects</h1>
-        <div class="main-content">
+        <div class="frontend-main-content">
           <p>
             In my back-end projects, I harness the power of Node.js and
             Express.js to develop robust server-side applications. Leveraging
@@ -53,7 +53,7 @@
             forward to the opportunity to collaborate with you on your next
             project.
           </p>
-          <section class="project-links">
+          <section class="frontend-project-links">
             <a
               href="https://github.com/morganmallen/web-sprint-challenge-build-a-web-api"
               target="_blank"
@@ -74,9 +74,9 @@
             </a>
           </section>
           <img
-            class="main-img"
+            class="frontend-img"
             src="./images/backend-img-1.jpg"
-            alt="home page img"
+            alt="backend page img"
           />
         </div>
       </main>
@@ -92,5 +92,21 @@
         </nav>
       </footer>
     </div>
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.querySelector(".navbar").style.top = "0";
+        } else {
+          document.querySelector(".navbar").style.top = "-50px";
+        }
+      }
+    </script>
   </body>
 </html>
